@@ -1,0 +1,108 @@
+# Raspberry Pi 5 | Docker Home Server
+
+**A containerised, self-hosted infrastructure environment built on a Raspberry Pi 5, providing photo management, DNS filtering and network services.**
+
+## Project Overview
+
+This project involves deploying and maintaining a Raspberry Pi 5 as a continuously operating home server using Docker and Portainer.
+
+The server hosts Immich for self-hosted photo management and AdGuard Home for network-level DNS filtering.
+
+It has operated continuously for approximately four months with no observed downtime.
+
+The project has provided practical experience in Linux administration, containerisation, networking, storage management and infrastructure reliability.
+
+## Hardware Specifications
+
+| Component | Configuration |
+|---|---|
+| Server | Raspberry Pi 5 |
+| RAM | 8GB |
+| Storage | M.2 SATA SSD |
+| Storage connection | USB-to-M.2 adapter |
+| Cooling | Active cooling fans |
+| Enclosure | 3D-printed case |
+| Networking | Wired Ethernet |
+
+## Software & Container Infrastructure
+
+### Docker
+
+Docker is used to run self-hosted applications in isolated containers, allowing services to be managed independently.
+
+### Portainer
+
+Portainer provides a web-based management interface for the Docker environment.
+
+It is used to manage and inspect the containerised services running on the Raspberry Pi.
+
+### Immich — Photo Management
+
+Immich provides a self-hosted photo backup and management platform.
+
+The service uses an externally connected M.2 SATA SSD for local photo storage.
+
+**Key capabilities:**
+- Self-hosted photo backup and management
+- Containerised application deployment
+- External storage integration
+- Local control over stored photographs
+
+### AdGuard Home — DNS Filtering
+
+AdGuard Home provides DNS-based filtering for devices using the service.
+
+Configured blocklists help filter advertising, tracking domains and known malicious domains.
+
+**Key capabilities:**
+- DNS query filtering
+- Advertisement and tracker blocking
+- Malware-domain blocklists
+- Centralised DNS filtering configuration
+
+## Network Architecture
+
+The Raspberry Pi is connected to my home network using wired Ethernet.
+
+The wider network infrastructure also includes a Vodafone THG3000 router repurposed into a wireless access point.
+
+The access point was configured by disabling its DHCP server and setting up a wireless network named **Ayub's Office**.
+
+This allows the spare router to provide wireless connectivity while avoiding conflicting DHCP services on the same network.
+
+## Reliability & Operation
+
+The server has operated continuously for approximately four months without observed downtime.
+
+Its active cooling, wired network connection and external SSD storage support ongoing operation.
+
+The environment provides practical experience in maintaining always-on infrastructure and managing containerised applications.
+
+## Technical Skills Demonstrated
+
+- Linux server administration
+- Docker containerisation
+- Portainer container management
+- Self-hosted application deployment
+- DNS filtering and network security fundamentals
+- DHCP and wireless access point configuration
+- External storage integration
+- Infrastructure troubleshooting
+
+## Future Improvements
+
+- Introduce automated uptime monitoring and alerting
+- Implement and test independent backups
+- Monitor SSD health and storage utilisation
+- Document container configurations and deployment procedures
+- Develop automated recovery and maintenance processes
+
+## Project Status
+
+**Operational — actively maintained**
+
+**Technologies:** Raspberry Pi 5 · Linux · Docker · Portainer · Immich · AdGuard Home · Ethernet · DNS · DHCP
+
+---
+
+*Part of my practical engineering portfolio, exploring containerised infrastructure, networking and self-hosted services.*
